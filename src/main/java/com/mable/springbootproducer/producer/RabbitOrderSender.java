@@ -33,6 +33,7 @@ public class RabbitOrderSender {
 			}else {
 				//失败，可以进行重传等
 				System.out.println("异常----异常-------------");
+
 			}
 		}
 	};
