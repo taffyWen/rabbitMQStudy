@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper 
+	namespace="com.mable.springbootproducer.mapper.OrderMapper">
+	<insert id="insert" parameterType="com.mable.springbootproducer.entity.Order">
+		insert into t_order(id, name, message_id) values
+		(#{id}, #{name, jdbcType=VARCHAR}, #{messageId})
+	</insert>
+</mapper>
