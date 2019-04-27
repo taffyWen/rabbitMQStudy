@@ -32,7 +32,7 @@ public class RabbitOrderSender {
 				brokerMessageLogMapper.changeBrokerMessageLogStatus(messageId, ConstantsStatus.ORDER_SEND_SUCCESS, new Date());
 			}else {
 				//失败，可以进行重传等
-				System.out.println("异常-----------------");
+				System.out.println("异常----异常-------------");
 			}
 		}
 	};
