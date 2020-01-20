@@ -59,6 +59,7 @@ public class DruidDataSourceSettings {
     @Value("${druid.connectionProperties}")
     private String connectionProperties;
 
+    //处理bean definition 中的占位符 ${ }
     @Bean
     public static PropertySourcesPlaceholderConfigurer properdtyConfigure(){
         return new PropertySourcesPlaceholderConfigurer();

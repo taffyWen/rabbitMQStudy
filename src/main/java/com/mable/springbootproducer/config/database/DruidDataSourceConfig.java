@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.alibaba.druid.pool.DruidDataSource;
 
 @Configuration
-@EnableTransactionManagement
+@EnableTransactionManagement   //开启事务
 public class DruidDataSourceConfig {
 
 	private static Logger logger = LoggerFactory.getLogger(DruidDataSourceConfig.class);

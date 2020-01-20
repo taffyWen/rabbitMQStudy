@@ -43,10 +43,10 @@ public class RabbitOrderSender {
 		//消息唯一id
 		CorrelationData correlationData = new CorrelationData(order.getMessageId());
 
-		rabbitTemplate.convertAndSend(ConstantsSetting.RABBIT_EXCHANGE, 
-				ConstantsSetting.RABBIT_ROUTING_KEY, 
-				order, 
-				correlationData);
+		rabbitTemplate.convertAndSend(ConstantsSetting.RABBIT_EXCHANGE, //交换机
+				ConstantsSetting.RABBIT_ROUTING_KEY, //路由键
+				order, 		//消息体
+				correlationData);//消息唯一ID
 	}
 	
 	
